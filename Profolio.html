@@ -4,9 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="stylefolio.css">
+     
+    <!-- Google font Links -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet"> -->
+
+
+     <!-- font Awsome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>PraJi Portfolio</title>
 </head>
 <body>
+    <!--____________________________ Naviation bar___________________________ -->
+    <header class="header" id="top-header"> 
+
+            <img src="./images/pravesh-bhatt-logo.png"alt="logo" class="logo">
+
+            <!-- experimental -->
+            <!-- <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label> -->
+            <!-- ------------------- -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li id="About"><a class="nav" href="#head-container" target="">About</a></li>
+                    <li  id="Skills"> <a class="nav" href="#skill-main">Skills</a></li>
+                    <li id="Projects"><a class="nav" href="#project-main">Projects</a></li>
+                    <li  id="Contact"><a class="nav" href="#off-link">Contact Me</a></li>
+                    <li id="Resueme"><a class="nav" href="https://drive.google.com/file/d/1lvVnJmwUaAGvtUdznJhfyL7kP-OSf7KE/view?usp=sharing" target="_blank">Resume</a></li> 
+                </ul>
+            </nav >
+            <div class="mob-navbar-btn">
+                <i name="open" class="mob-nav-icon fa-solid fa-bars"></i>
+                <i name="close" class="mob-nav-icon fa-solid fa-xmark"></i>
+            </div>
+    </header>
+    <!--________________________________About me!___________________________________________ -->
     
+    <div class="container head-container" id="head-container">
+        <!-- left side -->
+        <div class="left-side">
+            
+            <h1 class="title">Pravesh Bhatt
+                <h2 class="sub-title">Tech Savy | Technologically Competent | Enthusiastic Web Developer | Building Digital Experiences</h2>
+            </h1>
+            <div class="traits">
+                <ul class="trait-list gird">
+                    <li>Adaptive</li>
+                    <li>Problem Solving</li>
+                    <li>Leadership</li>
+                    <li>Creative</li>
+                    <li>Detail-Oriented</li>
+                    <li>Flexible</li>
+                    <li>Collaborative</li>
+                    <li>Jack Of All Traits</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- right side -->
+        <div class="right-side">
+            <div class="title-photo">
+                <img src="./images/myimglong.jpg" alt="img">
+            </div>
+            <div class="intro">
+                <h2>About Me</h2>
+                <p>Seeking beginner role to enhance and explore my techinal knowledge in a reputable organization to expand and utilize my learning skill and knowledge. Flexible to work in any enviorment as require. Strong Creative and analytical skill. Team Player with an eye for detail</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- _______________________________Skills and Projects__________________________________________ -->
+
+    <div class="cotainer main-container">
+        <!-- skills -->
+        <div class="skill-main" id="skill-main">
+            <h1 class="about__content-title">My Skills</h1>
+            <div class="skills">
+                <div class="skills-skill">HTML</div>
+                <div class="skills-skill">CSS</div>
+                <div class="skills-skill">JavaScript</div>
+                <div class="skills-skill">React</div>
+                <div class="skills-skill">Python Basics</div>
+                <div class="skills-skill">Responsive Design</div>
+                <div class="skills-skill">SEO</div>
+                <div class="skills-skill">Figma</div>
+                <div class="skills-skill">Photoshop</div>
+                <div class="skills-skill">SQL Basics</div>
+                <div class="skills-skill">Github</div>
+                <div class="skills-skill">Java</div>
+            </div>
+        </div>
+
+        <!-- Project -->
+        <section class="hero-section" id="project-main">
+            <h1 class="project-title">My Projects</h1>
+            <div class="card-grid">
+                <a class="card" href="./sample project/Project5- ToDoList.html">
+                  <div class="card__background" style="background-image: url(./images/todonewimg.jpg)"></div>
+                  <div class="card__content">
+                    <p class="card__category">To-Do List</p>
+                    <h3 class="card__heading">A simple To-Do List. Can Add and remove tasks</h3>
+                  </div>
+                </a>
+                <a class="card" href="./sample project/Project4- StopWatch.html">
+                  <div class="card__background" style="background-image: url(./images/stopwatch.jpg)"></div>
+                  <div class="card__content">
+                    <p class="card__category">Stopwatch</p>
+                    <h3 class="card__heading">A simple stopwatch with ability to start, pause and reset</h3>
+                  </div>
+                </a>
+              <a class="card" href="./sample project/Project1-QuoteGenerator.html">
+                <div class="card__background" style="background-image: url(./images/qoute.jfif)"></div>
+                <div class="card__content">
+                  <p class="card__category">Quote Generator</p>
+                  <h3 class="card__heading">Random Quote Generator to motivate you</h3>
+                </div>
+              </a>
+            <div>
+          </section>
+    </div>
+
+    <!-- Contact Info -->
+
+    <div class="container off-link" id="off-link">
+        <div class="connect-me">
+            <form >
+                <h2>Get In Touch</h2>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your email" required>
+                <input type="text" id="phone" placeholder="Your mobile number" required>
+                <textarea id="message" rows="4" placeholder="Your Message Here"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="handles" id="handles">
+            <h1> Socials </h1>
+            <div class="social">
+                <a href="mailto:bhattpravesh777@gmail.com?"><i class="fa-solid fa-envelope fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/pravesh-bhatt-393234132/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/DexterPra"><i class="fa-brands fa-git fa-2x"></i></a>
+                <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+            </div>
+            <div class="or-cv">
+                <h2>OR</h2>
+                <a class="cv-link" href="https://drive.google.com/file/d/1lvVnJmwUaAGvtUdznJhfyL7kP-OSf7KE/view?usp=drive_link" target="_blank"><button class="cv-btn">Get My CV Here</button></a>
+            </div> 
+        </div>
+    </div>
+    <footer>
+        <p>&#169; copyright 2023 by <a href="#top-header">Pravesh Bhatt</a></p>
+    </footer>
+    <!--_________________________ Scripts _______________________-->
+
+    <Script src="portfolio.js"></Script>
 </body>
 </html>
