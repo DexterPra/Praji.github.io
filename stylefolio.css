@@ -16,7 +16,7 @@ html{
 }
 body{
     overflow-x: hidden;
-    background: url(./images/bgwhitelines.jpg) no-repeat center center/ cover;
+    background: url(./images/cleanback.avif) no-repeat center center/ cover;
     background-attachment: fixed;
     height: 100vh;
     position: relative;
@@ -303,13 +303,18 @@ body{
   }
   .head-container{
     padding: 15rem;
-    gap: 1rem;
+    gap: 0rem;
   }
-  .left-side h1,h2{
+  .left-side h1, .left-side h2{
     width: 60%;
+  }
+  .left-side{
+    margin-right: 20rem;
   }
   .trait-list{
-    width: 60%;
+    width: 100%;
+    padding: 0rem 2rem;
+    overflow: hidden;
   }
   .right-side .intro{
     position: absolute;
@@ -336,8 +341,25 @@ body{
     max-height: 960px;
     position: relative;
   }
-  .left-side h1,h2{
-      width: 70%;
+  .head-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 960px;
+    max-width: 980px;
+    height: max-content;
+  }
+  .left-side h1,.left-side h2{
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .left-side .traits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .traits .trait-list li{
     font-size: 1.5rem;
@@ -466,13 +488,17 @@ body{
   width: 100%;
 }
 
-@media(min-width: 540px){
+@media (min-width: 540px){
   .card-grid{
     grid-template-columns: repeat(2, 1fr); 
   }
 }
 
-@media(min-width: 960px){
+@media(min-width: 980px){
+  .html{
+    font-size: 37.5;
+  }
+  
   .card-grid{
     grid-template-columns: repeat(3, 1fr); 
   }
@@ -502,9 +528,7 @@ body{
   top: 1;
   transform-origin: center;
   transform: scale(1) translateZ(0);
-  transition: 
-  filter 200ms linear,
-  transform 200ms linear;
+  transition: filter 200ms linear, transform 200ms linear;
   height: 80%;
 }
 
@@ -525,14 +549,14 @@ body{
 
 .card__category{
   color: var(--text-light);
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   margin-bottom: var(--spacing-s);
   text-transform: uppercase;
 }
 
 .card__heading{
   color: var(--text-lighter);
-  font-size: 1.9rem;
+  font-size: 1rem;
   text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
   line-height: 1.4;
 }
@@ -619,7 +643,9 @@ body{
     height: 100%;
     font-size: 1.6rem;
     font-weight: 600;
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px black;
+    background-color: red;
+    color: #ffffff;
   }
 
   .cv-link .cv-btn:hover,
@@ -670,6 +696,21 @@ body{
     width: 150px;
     margin: 20px auto 0;
     border: 10px;
+  }
+
+  @media (max-width: 980px ) {
+    .social a {
+      font-size: 1.8rem;
+      margin: 0.5rem;
+      padding: 1rem;
+    }
+    .social {
+      padding: 0.5rem 0.1rem;
+      width: 120px; /* Adjust the width as needed */
+      align-self: flex-start; /* Align at the top of the container */
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   /* footer */
