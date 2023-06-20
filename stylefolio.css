@@ -398,6 +398,94 @@ body{
   }
 
 }
+@media (max-width: 720px) {
+  .container{
+    max-width: 705px;
+    position: relative;
+  }
+  .head-container{
+    padding: 2rem 5rem;
+    gap: 0rem;
+  }
+  .left-side h1, .left-side h2{
+    width: 30%;
+  }
+  .left-side{
+    margin-right: auto;
+  }
+  .trait-list{
+    width: 60%;
+    padding: 0rem 2rem;
+    overflow: hidden;
+  }
+  .intro p{
+    font-size: 1.5rem;
+    width: 100%;
+    height: max-content;
+  }
+  .intro h2{
+    font-size: 2.5rem;
+    line-height: 4rem;
+    padding: 0.8rem;
+  }
+  .head-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 705px;
+    max-width: 705px;
+    height: max-content;
+  }
+  .left-side h1,.left-side h2{
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .left-side .traits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .traits .trait-list li{
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+    
+    width: 16rem;
+    height: 6rem;
+  
+    padding: auto;  
+  }
+  .right-side{
+    position: relative;
+  }
+  .right-side .title-photo img{
+    margin: 1rem;
+  }
+  .right-side::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+    width: 40%;
+    height: 90%;
+    background-color: var(--background-color);
+    z-index: -2;
+  }
+  
+  .right-side .intro{
+      position: absolute;
+      height: 15rem;
+      bottom: 0;
+      right: 95%;
+      height: 90%;
+      background-color: var(--primary-color);
+      z-index: -3;
+  }
+}
 
 
 /*____________________________________ Skills and Project Styling____________________________________*/
@@ -559,6 +647,29 @@ body{
   font-size: 1rem;
   text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
   line-height: 1.4;
+}
+
+@media (max-width: 720px) {
+  .main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+  }
+  .card__category{
+    color: var(--text-light);
+    font-size: 2rem;
+    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+  }
+  
+  .card__heading{
+    color: var(--text-lighter);
+    font-size: 2rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+  }
 }
 
 
